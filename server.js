@@ -18,7 +18,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(express.static(__dirname + '/static'));
+app.use(express.static(__dirname + '/dist'));
 
 app.listen(app.get('port'), function() {
   console.log('Listening on port ' + app.get('port'));
